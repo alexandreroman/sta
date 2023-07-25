@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: sta-bu
+  description: STA BU
+  links:
+  - url: https://github.com/alexandreroman/sta
+    title: Website
+spec:
+  type: sub-department
+  profile:
+    displayName: STA team
+    email: contact@sta-corp.com
+    picture: https://raw.githubusercontent.com/alexandreroman/tap-demo-kit-gitops/main/icon.png
+  parent: sta-corp
+  children: [sta-dev-team]

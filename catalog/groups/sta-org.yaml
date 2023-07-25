@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: sta-corp
+  description: STA corp
+spec:
+  type: organization
+  profile:
+    displayName: STA corp
+    email: contact@sta-corp.com
+    picture: https://raw.githubusercontent.com/alexandreroman/tap-demo-kit-gitops/main/icon.png
+  children: []

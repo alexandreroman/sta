@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sta-frontend
+  description: Frontend
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=sta-frontend
+spec:
+  type: service
+  lifecycle: experimental
+  owner: sta-team
+  system: sta
+  dependsOn:
+  - component:sta-marketplace

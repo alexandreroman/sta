@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: sta-catalog-info
+  description: Catalog for the 'STA' app
+  tags:
+  - web
+spec:
+  targets:
+  - ./components/sta.yaml
+  - ./components/sta-frontend.yaml
+  - ./components/sta-marketplace.yaml
+  - ./components/sta-trading-agent.yaml
+  - ./components/sta-invoker.yaml
+  - ./resources/sta-marketplace-db.yaml
+  - ./systems/sta-system.yaml
+  - ./groups/sta-org.yaml
+  - ./groups/sta-bu.yaml
+  - ./groups/sta-team.yaml

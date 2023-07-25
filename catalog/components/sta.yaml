@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sta
+  description: API gateway
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=sta
+spec:
+  type: service
+  lifecycle: experimental
+  owner: sta-team
+  system: sta
+  dependsOn:
+  - component:sta-frontend
+  - component:sta-marketplace
